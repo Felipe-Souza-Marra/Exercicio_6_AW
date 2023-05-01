@@ -16,82 +16,88 @@
 <body>
   <div class="container p-5">
     <form action="/meu_app/processa_login">
-      <div class="form-group mt-2 ">
-        <label for="name">Nome Completo:</label>
-        <input type="name" class="form-control" id="name" placeholder="Nome" name="name">
-      </div>
-      <div class="form-group mt-2">
-        <label for="cpf">CPF:</label>
-        <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" name="cpf">
-      </div>
-      <div class="form-group mt-2">
-        <label for="ddn">Data de nascimento:</label>
-        <input type="date" class="form-control" id="ddn" placeholder="dd/mm/yyyy" name="ddn">
-      </div>
-      <div class="form-group mt-2">
-        <label for="edr">Endereço:</label>
-        <input type="text" class="form-control" id="edr" placeholder="Endereço" name="edr">
-      </div>
-      <div class="form-group mt-2">
-        <label for="uf">UF:</label>
-        <select class="form-control" id="uf" name="uf">
-          <option>GO</option>
-          <option>DF</option>
-          <option>SP</option>
-          <option>MT</option>
-          <option>RJ</option>
-        </select>
-      </div>
-      <div class="form-group mt-2">
-        <label for="cep">CEP:</label>
-        <input type="text" class="form-control" id="cep" placeholder="000000-000" name="cep">
-      </div>
-      <div class="form-group mt-2">
-        <label for="email">E-mail:</label>
-        <input type="text" class="form-control" id="email" placeholder="E-mail" name="email">
-      </div>
-      <div class="form-group mt-2">
-        <label for="cel">Telefone:</label>
-        <input type="text" class="form-control" id="cel" placeholder="(DDD) 9 0000-0000" name="cel">
-      </div>
-      <div class="form-group mt-2">
-        <label for="ddh">Horário:</label>
-        <input type="time" class="form-control" id="ddh" placeholder="00:00" name="ddh">
-      </div>
-      <div class="form-group mt-2">
-        <label for="d">Dia:</label>
-        <input type="date" class="form-control" id="d" name="d">
-      </div>
-      <div class="form-group mt-2">
-        <label for="sdma">Seleção de especialidade médica:</label>
-        <select class="form-control" id="sdma" name="sdma">
-          <option>Angiologia</option>
-          <option>Cardiologia</option>
-          <option>Ginecologia</option>
-          <option>Dermatologia</option>
-          <option>Oftalmologia</option>
-        </select>
-      </div>
-      <div class="form-group mt-2">
-        <label>Seleçao de medicamentos alérgicos:</label>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Antibióticos">
-          <label class="form-check-label" for="Antibióticos">
-            Antibióticos
-          </label>
+      <div class="form-group">
+        <h1>Dados pessoais</h1>
+        <div class="form-group mt-2 ">
+          <label for="name">Nome Completo:</label>
+          <input type="name" class="form-control" id="name" placeholder="Nome" name="name">
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Anti-inflamatórios">
-          <label class="form-check-label" for="Anti-inflamatórios">
-            Anti-inflamatórios
-          </label>
+        <div class="form-group mt-2">
+          <label for="cpf">CPF:</label>
+          <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" name="cpf">
+        </div>
+        <div class="form-group mt-2">
+          <label for="ddn">Data de nascimento:</label>
+          <input type="date" class="form-control" id="ddn" placeholder="dd/mm/yyyy" name="ddn">
+        </div>
+        <div class="form-group mt-2">
+          <label for="edr">Endereço:</label>
+          <input type="text" class="form-control" id="edr" placeholder="Endereço" name="edr">
+        </div>
+        <div class="form-group mt-2">
+          <label for="uf">UF:</label>
+          <select class="form-control" id="uf" name="uf">
+            <option>GO</option>
+            <option>DF</option>
+            <option>SP</option>
+            <option>MT</option>
+            <option>RJ</option>
+          </select>
+        </div>
+        <div class="form-group mt-2">
+          <label for="cep">CEP:</label>
+          <input type="text" class="form-control" id="cep" placeholder="000000-000" name="cep">
+        </div>
+        <div class="form-group mt-2">
+          <label for="email">E-mail:</label>
+          <input type="text" class="form-control" id="email" placeholder="E-mail" name="email">
+        </div>
+        <div class="form-group mt-2">
+          <label for="cel">Telefone:</label>
+          <input type="text" class="form-control" id="cel" placeholder="(DDD) 9 0000-0000" name="cel">
         </div>
       </div>
-      <div class="form-group mt-2">
-        <label for="cdia">Campo de informações adicionais:</label>
-        <textarea class="form-control" id="cdia" rows="3" name="cdia"></textarea>
+      <div class="form-group mt-5">
+        <h1>Dados da consulta</h1>
+        <div class="form-group mt-2">
+          <label for="ddh">Horário:</label>
+          <input type="time" class="form-control" id="ddh" placeholder="00:00" name="ddh">
+        </div>
+        <div class="form-group mt-2">
+          <label for="d">Dia:</label>
+          <input type="date" class="form-control" id="d" name="d">
+        </div>
+        <div class="form-group mt-2">
+          <label for="sdma">Seleção de especialidade médica:</label>
+          <select class="form-control" id="sdma" name="sdma">
+            <option>Angiologia</option>
+            <option>Cardiologia</option>
+            <option>Ginecologia</option>
+            <option>Dermatologia</option>
+            <option>Oftalmologia</option>
+          </select>
+        </div>
+        <div class="form-group mt-2">
+          <label>Seleçao de medicamentos alérgicos:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Antibióticos">
+            <label class="form-check-label" for="Antibióticos">
+              Antibióticos
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="Anti-inflamatórios">
+            <label class="form-check-label" for="Anti-inflamatórios">
+              Anti-inflamatórios
+            </label>
+          </div>
+        </div>
+        <div class="form-group mt-2">
+          <label for="cdia">Campo de informações adicionais:</label>
+          <textarea class="form-control" id="cdia" rows="3" name="cdia"></textarea>
+        </div>
       </div>
-        <button type="button" class="btn btn-success mt-2">Submit</button>
+      <button type="button" class="btn btn-success mt-3">Submit</button>
     </form>
   </div>
 </body>
